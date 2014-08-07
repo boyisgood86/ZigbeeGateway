@@ -1,4 +1,7 @@
-This is Zigbee gateway project
+This is Zigbee gateway project.
+
+
+
 OS: rt_thread v1.2
 	lwip v1.4  (socket)
 	
