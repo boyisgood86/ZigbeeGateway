@@ -78,7 +78,7 @@ void rt_components_board_init(void)
 
 void rt_components_init(void)
 {
- rt_kprintf("%s, %d\n",__func__,__LINE__);
+// rt_kprintf("%s, %d\n",__func__,__LINE__);
 #ifndef _MSC_VER
       #if RT_DEBUG_INIT
               int result;
@@ -110,7 +110,7 @@ void rt_components_init(void)
                 finsh_set_device(RT_CONSOLE_DEVICE_NAME);
         #endif
 
-        rt_kprintf("%s, %d\n",__func__,__LINE__);
+//        rt_kprintf("%s, %d\n",__func__,__LINE__);
         
         #ifdef RT_USING_LWIP
                 /* initialize lwip stack */

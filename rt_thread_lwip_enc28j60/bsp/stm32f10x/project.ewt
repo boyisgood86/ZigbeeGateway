@@ -188,6 +188,9 @@
       <name>$PROJ_DIR$\applications\tcp_server.c</name>
     </file>
     <file>
+      <name>$PROJ_DIR$\applications\uart_app.c</name>
+    </file>
+    <file>
       <name>$PROJ_DIR$\applications\udp_server.c</name>
     </file>
   </group>

@@ -99,22 +99,31 @@ static void tcp_server_thread(void *arg)
   }
 }
 
+static void uart_hello_thread(void *arg)
+{
+  extern void usart1_tcpip(void);
+  while(1) {
+    usart1_tcpip();
+    rt_thread_delay(100);
+  }
+}
+
 void rt_init_thread_entry(void* parameter)
 {
-  rt_kprintf("%s, %d\n",__func__,__LINE__);
+//  rt_kprintf("%s, %d\n",__func__,__LINE__);
 #ifdef RT_USING_COMPONENTS_INIT
     /* initialization RT-Thread Components */
     rt_components_init();
 #endif
-rt_kprintf("%s, %d\n",__func__,__LINE__);
+//rt_kprintf("%s, %d\n",__func__,__LINE__);
 #ifdef  RT_USING_FINSH
     finsh_set_device(RT_CONSOLE_DEVICE_NAME);
 #endif  /* RT_USING_FINSH */
 
-rt_kprintf("%s, %d\n",__func__,__LINE__);    
+//rt_kprintf("%s, %d\n",__func__,__LINE__);    
     /* LwIP Initialization */
 #ifdef RT_USING_LWIP
-    rt_kprintf("init enc28j60..\n");
+//    rt_kprintf("init enc28j60..\n");
     rt_hw_enc28j60_init();
     
     // 在控制台中启动
@@ -122,21 +131,34 @@ rt_kprintf("%s, %d\n",__func__,__LINE__);
     void httpclient(void);
     httpclient();
 #endif
-    sys_thread_new("hello", hello_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
+    
     sys_thread_new("tcp_client", tcp_client_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
     sys_thread_new("udp_server", udp_server_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
     sys_thread_new("tcp_server", tcp_server_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
-    
+
+#ifdef RT_USING_USART
+    sys_thread_new("usart1", uart_hello_thread, NULL,TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
+#else
+    sys_thread_new("hello", hello_thread, NULL, TCPIP_THREAD_STACKSIZE, TCPIP_THREAD_PRIO);
+#endif /*RT_USING_USART, see rtconfig.h file*/
     
 #endif
 
 }
 
+void uart_1_thread_entry(void* parameter)
+{
+    rt_kprintf("Now in  %s, %d\n",__func__,__LINE__);
+}
+
 int rt_application_init(void)
 {
     rt_thread_t init_thread;
+    rt_thread_t uart_1_thread;
 
     rt_err_t result;
+
+    rt_kprintf("Now in  %s, %d\n",__func__,__LINE__);
 
     /* init led thread */
     result = rt_thread_init(&led_thread,
@@ -164,6 +186,14 @@ int rt_application_init(void)
 
     if (init_thread != RT_NULL)
         rt_thread_startup(init_thread);
+    
+//    /*usart 1*/
+//    uart_1_thread = rt_thread_create("devt",
+//                  uart_1_thread_entry, RT_NULL,
+//                  1024, 25, 7);
+//    if(uart_1_thread != RT_NULL) {
+//        rt_thread_startup(uart_1_thread);
+//    }
 
     return 0;
 }

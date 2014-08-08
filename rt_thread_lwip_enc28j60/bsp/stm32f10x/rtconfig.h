@@ -75,7 +75,7 @@
 #define RT_CONSOLE_DEVICE_NAME	    "uart1"
 
 /* SECTION: finsh, a C-Express shell */
-#define RT_USING_FINSH
+//#define RT_USING_FINSH
 /* Using symbol table */
 #define FINSH_USING_SYMTAB
 #define FINSH_USING_DESCRIPTION
@@ -115,10 +115,19 @@
 /* the number of simulatenously active TCP connections*/
 #define RT_LWIP_TCP_PCB_NUM	5
 
-
-/*add by myself*/
+/****************************************add by myself**************************************************/
+/*add by myself  --jason*/
 #define SO_REUSE	(1)
 
+/*if use USART*/
+#define RT_USING_USART   
+/*using UART1*/
+#define RT_USING_UART1
+/*using UART2*/
+//#define RT_USING_UART2
+/*using UART3*/
+//#define RT_USING_UART3
+/************************************add by myself**************************************************/
 
 /* Using DHCP */
 // #define RT_LWIP_DHCP 
