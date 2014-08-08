@@ -1,0 +1,16 @@
+.\obj\udpserver.o: ..\..\..\examples\network\udpserver.c
+.\obj\udpserver.o: ..\..\..\include\rtthread.h
+.\obj\udpserver.o: ..\..\..\include\rtdef.h
+.\obj\udpserver.o: ./rtconfig.h
+.\obj\udpserver.o: C:\Keil\ARM\RV31\INC\stdarg.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\lwip/sockets.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\lwip/opt.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\lwipopts.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\lwip/debug.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\lwip/arch.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\arch\include\arch/cc.h
+.\obj\udpserver.o: ..\..\..\include\rthw.h
+.\obj\udpserver.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\udpserver.o: C:\Keil\ARM\RV31\INC\stddef.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\ipv4\lwip/ip_addr.h
+.\obj\udpserver.o: ..\..\..\net\lwip\src\include\ipv4\lwip/inet.h

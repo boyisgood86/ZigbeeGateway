@@ -1,0 +1,16 @@
+.\obj\tcpserver.o: ..\..\..\examples\network\tcpserver.c
+.\obj\tcpserver.o: ..\..\..\include\rtthread.h
+.\obj\tcpserver.o: ..\..\..\include\rtdef.h
+.\obj\tcpserver.o: ./rtconfig.h
+.\obj\tcpserver.o: C:\Keil\ARM\RV31\INC\stdarg.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\lwip/sockets.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\lwip/opt.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\lwipopts.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\lwip/debug.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\lwip/arch.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\arch\include\arch/cc.h
+.\obj\tcpserver.o: ..\..\..\include\rthw.h
+.\obj\tcpserver.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\tcpserver.o: C:\Keil\ARM\RV31\INC\stddef.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\ipv4\lwip/ip_addr.h
+.\obj\tcpserver.o: ..\..\..\net\lwip\src\include\ipv4\lwip/inet.h

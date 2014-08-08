@@ -1,0 +1,13 @@
+.\obj\inet.o: ..\..\..\net\lwip\src\core\ipv4\inet.c
+.\obj\inet.o: ..\..\..\net\lwip\src\include\lwip/opt.h
+.\obj\inet.o: ..\..\..\net\lwip\src\lwipopts.h
+.\obj\inet.o: ./rtconfig.h
+.\obj\inet.o: ..\..\..\net\lwip\src\include\lwip/debug.h
+.\obj\inet.o: ..\..\..\net\lwip\src\include\lwip/arch.h
+.\obj\inet.o: ..\..\..\net\lwip\src\arch\include\arch/cc.h
+.\obj\inet.o: ..\..\..\include\rthw.h
+.\obj\inet.o: ..\..\..\include\rtthread.h
+.\obj\inet.o: ..\..\..\include\rtdef.h
+.\obj\inet.o: C:\Keil\ARM\RV31\INC\stdarg.h
+.\obj\inet.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\inet.o: ..\..\..\net\lwip\src\include\ipv4\lwip/inet.h

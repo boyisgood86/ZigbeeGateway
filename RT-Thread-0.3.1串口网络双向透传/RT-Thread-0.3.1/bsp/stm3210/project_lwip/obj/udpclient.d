@@ -1,0 +1,17 @@
+.\obj\udpclient.o: ..\..\..\examples\network\udpclient.c
+.\obj\udpclient.o: ..\..\..\include\rtthread.h
+.\obj\udpclient.o: ..\..\..\include\rtdef.h
+.\obj\udpclient.o: ./rtconfig.h
+.\obj\udpclient.o: C:\Keil\ARM\RV31\INC\stdarg.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\lwip/netdb.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\lwip/opt.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\lwipopts.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\lwip/debug.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\lwip/arch.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\arch\include\arch/cc.h
+.\obj\udpclient.o: ..\..\..\include\rthw.h
+.\obj\udpclient.o: C:\Keil\ARM\RV31\INC\string.h
+.\obj\udpclient.o: C:\Keil\ARM\RV31\INC\stddef.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\lwip/sockets.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\ipv4\lwip/ip_addr.h
+.\obj\udpclient.o: ..\..\..\net\lwip\src\include\ipv4\lwip/inet.h

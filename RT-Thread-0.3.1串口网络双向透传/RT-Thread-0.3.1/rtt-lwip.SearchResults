@@ -1,0 +1,27 @@
+---- tcpserv Matches (27 in 4 files) ----
+Application.c (bsp\stm3210\project_lwip):	extern void tcpserv(void* parameter);
+Application.c (bsp\stm3210\project_lwip):		tcpserv(parameter);		//tcp server
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR><BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR><BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Called By]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<P><STRONG><a name="[220]"></a>tcpserv</STRONG> (Thumb, 390 bytes, Stack size 88 bytes, tcpserver.o(i.tcpserv))
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR><BR>[Stack]<UL><LI>Max Depth = 548<LI>Call Chain = tcpserv &rArr; lwip_recv &rArr; lwip_recvfrom &rArr; netconn_recv &rArr; tcpip_apimsg &rArr; sys_arch_sem_wait &rArr; rt_sem_take &rArr; rt_ipc_object_suspend &rArr; rt_thread_suspend &rArr; rt_schedule_remove_thread &rArr; rt_kprintf &rArr; vsnprintf &rArr; print_number
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR><BR>[Stack]<UL><LI>Max Depth = 548<LI>Call Chain = tcp_server_thread &rArr; tcpserv &rArr; lwip_recv &rArr; lwip_recvfrom &rArr; netconn_recv &rArr; tcpip_apimsg &rArr; sys_arch_sem_wait &rArr; rt_sem_take &rArr; rt_ipc_object_suspend &rArr; rt_thread_suspend &rArr; rt_schedule_remove_thread &rArr; rt_kprintf &rArr; vsnprintf &rArr; print_number
+Rtthread-stm32.htm (bsp\stm3210\project_lwip\obj):<BR>[Calls]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tcpserv
+Tcpserver.c (examples\network):void tcpserv(void* parameter)
+Tcpserver.c (examples\network):FINSH_FUNCTION_EXPORT(tcpserv, startup tcp server);
+Tcpserver.c (net\apps):void tcpserv(void* parameter)
+Tcpserver.c (net\apps):FINSH_FUNCTION_EXPORT(tcpserv, startup tcp server);
