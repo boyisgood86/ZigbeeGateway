@@ -1,5 +1,17 @@
 ËµÃ÷£º
 
 
+tcp client bind port : CLIENT_PORT (10030)
+
+tcp server bind port : TCP_PORT	(10020)
+
+udp server bind port : UDP_PORT (10010)
+
+
+tcp client connect ip : TEST_IP(192.168.1.125)
+
+tcp client connect port: TEST_PORT(10000)
+
+
 
 Email:newleaves@126.com

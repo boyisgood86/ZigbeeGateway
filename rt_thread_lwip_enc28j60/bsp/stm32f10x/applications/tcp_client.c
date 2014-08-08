@@ -16,7 +16,7 @@
 #define TEST_IP     ("192.168.1.125")
 #define TEST_PORT   (10000)
 
-#define CLIENT_PORT     (9999)
+#define CLIENT_PORT     (10030)
 
 unsigned char send_data[] = "Hello,I/m clinet, just test !";
 char recv_buff[LEN];

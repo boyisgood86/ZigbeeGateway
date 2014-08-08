@@ -33,7 +33,7 @@ Stop=1
 Freq=10000000
 MultiCoreRunAll=1
 [DebugChecksum]
-Checksum=-62775524
+Checksum=1418786069
 [Exceptions]
 StopOnUncaught=_ 0
 StopOnThrow=_ 0
@@ -43,6 +43,10 @@ ShowArgs=0
 MixedMode=1
 [JLinkDriver]
 CStepIntDis=_ 0
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
 [Log file]
 LoggingEnabled=_ 0
 LogFile=_ ""
@@ -50,6 +54,13 @@ Category=_ 0
 [TermIOLog]
 LoggingEnabled=_ 0
 LogFile=_ ""
+[Aliases]
+A0=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" ""
+A1=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\applications\startup.c" ""
+A2=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\drivers\board.c" ""
+A3=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\components\CMSIS\Include\core_cm3.h" ""
+Count=4
+SuppressDialog=1
 [CallStackLog]
 Enabled=0
 [DriverProfiling]
@@ -58,14 +69,3 @@ Mode=0
 Graph=0
 Symbiont=0
 Exclusions=
-[Disassemble mode]
-mode=0
-[Breakpoints2]
-Count=0
-[Aliases]
-A0=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c" ""
-A1=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\applications\startup.c" ""
-A2=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\bsp\stm32f10x\drivers\board.c" ""
-A3=_ "C:\Users\jason\Desktop\GateWay\bak\rtthread_yeelink\components\CMSIS\Include\core_cm3.h" ""
-Count=4
-SuppressDialog=1
